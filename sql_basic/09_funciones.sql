@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- ! Funciones
 
 -- * SUM
@@ -26,3 +27,5 @@ SELECT dni, SUBSTR(DNI,3) AS numero  FROM clientes WHERE numero_socio = 1;
 --* CONCAT
 SELECT CONCAT(nombre,' ',apellidos) AS nombre_completo FROM clientes WHERE numero_socio = 1;
 SELECT CONCAT(nombre,',',apellidos) AS nombre_completo FROM clientes WHERE numero_socio = 1;
+
+
