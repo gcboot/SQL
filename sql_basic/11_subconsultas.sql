@@ -42,4 +42,3 @@ FROM clientes
 WHERE numero_socio NOT IN 
 (SELECT numero_socio FROM clientes_web);
 
-

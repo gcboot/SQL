@@ -29,3 +29,4 @@ SELECT CONCAT(nombre,' ',apellidos) AS nombre_completo FROM clientes WHERE numer
 SELECT CONCAT(nombre,',',apellidos) AS nombre_completo FROM clientes WHERE numero_socio = 1;
 
 
+
