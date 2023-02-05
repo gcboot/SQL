@@ -12,3 +12,14 @@ CREATE TABLE users(
   gender ENUM('male', 'female') NOT NULL DEFAULT 'female',
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+-- ? CONSTRAINTS
+/* Los constraints son reglas establecidas para cada una de las columnas de una tabla
+Ejemplos:
+
+* NOT NULL -> No permite valores nulos
+* UNIQUE -> Inidica que en la columna no acepte datos repetidos
+* PRIMARY KEY -> La columna se la llave primaria, indexa la columna y no acepta valores repetidos
+* DEFAULT -> Inserta un valor por defecto
+* UNSIGNED -> La columna no puede almacenar numeros negativos
+* ENUMS -> Es un string el cual toma su valor de una lista previamente definida. Al nosotros asignar el tipo enum a un campo, este, no podrá almacenar otro valor que no se encuentre dentro de la lista.
+*/
