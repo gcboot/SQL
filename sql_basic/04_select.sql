@@ -26,6 +26,11 @@ SELECT COUNT(*) FROM clientes; -- Resultado 6 Registros
 SELECT COUNT(dni) FROM clientes; -- dni validos 2
 SELECT COUNT(DISTINCT nombre) FROM clientes; -- 5 nombres distintos
 
+-- LIKE
+SELECT * FROM clientes WHERE email '%gmail%'; -- la columna que contenga gmail no importa si tiene otra palabra
+SELECT * FROM clientes WHERE email '%gmail'; -- la columna que se busca debe de terminar en gmail
+selSELECT * FROM clientes WHERE email 'victor%'
+
 -- TODO: Escribe consultas que respondan a las siguientes preguntas:
 -- ? 1. ​¿Cuántos clientes nos han dado su teléfono móvil? 
 SELECT COUNT(numero_telefono) FROM clientes; -- R// 1

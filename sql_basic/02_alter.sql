@@ -30,6 +30,12 @@ ALTER TABLE clientes DROP COLUMN puntos;
 -- de la tienda
 ALTER TABLE clientes REMANE COLUMN dni TO nif;
 
+-- modificar el tipo dato de una columna
+ALTER TABLE clientes_web MODIFY COLUMN numero_socio INT AUTO_INCREMENT;
+
+-- Crear una tabla y que muestre como se crea la tabla
+SHOW CREATE TABLE clientes_web;
+
 -- ! DROP TABLE
 DROP nombre_tabla;
 

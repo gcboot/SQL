@@ -12,9 +12,11 @@ BEGIN;
 
 -- * DELETE eliminamos todos los null
 DELETE FROM clientes WHERE dni IS NULL;
+DELETE FROM clientes WHERE id = 1;
 
 -- * UPDATE actualizamos todos los numeros de socio de NULL a 0
 UPDATE clientes SET numero_socio = 0 WHERE numero_socio IS NULL;
+UPDATE clientes SET apellidos = 'Lopez' WHERE id = 1;
 
 -- ? Descartamos los cambios
 ROLLBACK;
